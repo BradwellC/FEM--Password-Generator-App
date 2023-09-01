@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Password generator app</title>
+
+    <link rel="stylesheet" href="./Public/css/style.css" />
+  </head>
+  <body>
+    <!-- Password Generator
+
   
-  <title>Frontend Mentor | Password generator app</title>
-</head>
-<body>
 
-  Password Generator
-
-  P4$5W0rD!
-
-  Character Length
+  
 
   Include Uppercase Letters
   Include Lowercase Letters
@@ -23,7 +29,47 @@
 
   Strength
 
-  Generate
+  Generate -->
 
-</body>
+    <div id="random-password">
+      <input type="text" id="password" placeholder="P4$5W0rD!" />
+      <button id="copy">Copy</button>
+      <div id="settings">
+        <div class="form-group">
+          <label for="length">Character Length</label>
+          <input
+            type="range"
+            min="1"
+            max="20"
+            value="10"
+            class="slider"
+            id="myRange"
+          />
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" id="Upper_Alpha" checked />
+          <label for="symbols">Include Uppercase Letters</label>
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" id="Lower_Alpha" checked />
+          <label for="symbols">Include Lowercase Letters</label>
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" id="numbers" checked />
+          <label for="numbers">Include Numbers</label>
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" id="symbols" checked />
+          <label for="symbols">Include Symbols</label>
+        </div>
+      </div>
+      <button id="generate">Generate Password</button>
+    </div>
+
+    <script src="./Public/js/main.js"></script>
+  </body>
 </html>

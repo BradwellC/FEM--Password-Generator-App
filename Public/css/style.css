@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'JetBrains';
+  font-weight: bold;
+  font-style: italic;
+  src: url('../fonts/JetBrainsMono-BoldItalic.woff2') format('woff2'),
+    url('../fonts/JetBrainsMono-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'JetBrains';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../fonts/JetBrainsMono-Bold.woff2') format('woff2'),
+    url('../fonts/JetBrainsMono-Bold.woff') format('woff');
+}
+
+/* Fonts END */
+:root {
+  --ff-main: 'JetBrains', sans-serif;
+}
+
+body {
+  font-family: var(--ff-main);
+}
